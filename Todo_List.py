@@ -4,6 +4,8 @@ import csv
 
 
 def main():
+
+    #Login/Register Window Layout
     layout = [
         [
             sg.T("Username:", background_color='#88142c', size=(10, 1), font=("'Bookman' 16")),
@@ -54,9 +56,7 @@ def register(username, password, window):
         return True
 
 
-# login user
-
-
+# Login User
 def login(username, password, window, close_window=True):
     if not username or not password:
         sg.theme("DarkRed")
@@ -79,7 +79,7 @@ def login(username, password, window, close_window=True):
     return False
 
 
-# Todo List GUI
+# Todo List Window Layout
 def layout():
     layout = [
             [
@@ -112,6 +112,7 @@ def layout():
     return layout
 
 
+# Todo Functionalities
 def todo():
     sg.theme("DarkRed")
     layout_ = layout()
